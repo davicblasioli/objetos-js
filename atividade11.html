@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atv11</title>
+    </head>
+    <body>
+        <h1>11</h1>
+        <script>
+            const teclado = {
+                cor: 'preto',
+                teclasApertadas: 0,
+                formato: 'retangular',
+                marca: 'logitech',
+                led: 'não',
+
+                digitar(texto){
+                    alert(texto);
+                    this.teclasApertadas += texto.length
+
+                },
+                bater(bate){
+                    alert('Você quebrou o teclado');
+                },
+                clicar(tecla){
+                    alert('Você clicou em uma tecla');
+                    this.teclasApertadas += 1;
+                },
+                dono:{
+                    nome: 'Davi Limdo',
+                    idade: 16,
+                    saldo: 0,
+
+                    doarDinheiro(valor){
+                        alert(`Você doou ${valor} reais`)
+                        this.saldo += parseFloat(valor)
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
